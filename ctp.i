@@ -25,6 +25,8 @@
 %include "various.i"
 %apply char **STRING_ARRAY { char *ppInstrumentID[] };
 
+%javaconst(1);
+
 %feature("director") CThostFtdcMdSpi;
 %include "./ctp/ThostFtdcMdApi.h"
 %feature("director") CThostFtdcTraderSpi;
